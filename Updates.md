@@ -1,0 +1,1 @@
+Checking that git is working
