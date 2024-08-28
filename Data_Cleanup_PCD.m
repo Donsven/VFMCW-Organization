@@ -23,7 +23,7 @@ for i = 1:length(subFolders)
             csvFilePath = fullfile(currentSubFolder, csvFiles(j).name);
             
             % Load the CSV file into a table
-            data = readtable(csvFilePath);
+            data = readtable(csvFile
             
             % Extract the X, Y, Z columns
             xyzPoints = data{:, {'X', 'Y', 'Z'}};
