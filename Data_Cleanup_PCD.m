@@ -5,7 +5,7 @@ baseDir = '/Users/donsven/documents/matlab/test_data';
 subFolders = {'left', 'center', 'right'};
 
 % Loop through each subfolder
-for i = 1:length(subFolders)
+for i = 1:length(subFo
     currentSubFolder = fullfile(baseDir, subFolders{i});
     fprintf('Processing subfolder: %s\n', currentSubFolder);
     
