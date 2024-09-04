@@ -16,7 +16,7 @@ for i = 1:length(subFolders)
     if isempty(csvFiles)
         fprintf('No CSV files found in subfolder!\n');
     else
-        % Process each CSV file
+        % Process each CSV
         for j = 1:length(csvFiles)
             
             % Construct the full file path
