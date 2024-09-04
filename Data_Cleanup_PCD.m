@@ -6,7 +6,7 @@ subFolders = {'left', 'center', 'right'};
 
 % Loop through each subfolder
 for i = 1:length(subFolders)
-    currentSubFolder = fullfil
+    currentSubFolder = fullfile(baseDir, subFolders{i});
     fprintf('Processing subfolder: %s\n', currentSubFolder);
     
     % List all CSV files in the current subfolder
@@ -36,7 +36,7 @@ for i = 1:length(subFolders)
             outputPCDPath = fullfile(currentSubFolder, [fileName, '.pcd']);
             
             % Save the point cloud to a PCD file
-            pcwrite(ptCloud, outputPCDPath);
+            pcwrite(ptCl
             
             % Display a message indicating progress
             fprintf('Processed %s and saved as %s\n', csvFiles(j).name, outputPCDPath);
