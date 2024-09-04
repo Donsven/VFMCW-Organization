@@ -6,7 +6,7 @@ subFolders = {'left', 'center', 'right'};
 
 % Loop through each subfolder
 for i = 1:length(subFolders)
-    currentSubFolder = fullfile(baseDir, subFolders{i});
+    currentSubFolder = fullfil
     fprintf('Processing subfolder: %s\n', currentSubFolder);
     
     % List all CSV files in the current subfolder
