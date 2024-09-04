@@ -36,7 +36,7 @@ for i = 1:length(subFolders)
             outputPCDPath = fullfile(currentSubFolder, [fileName, '.pcd']);
             
             % Save the point cloud to a PCD file
-            pcwrite(ptCl
+            pcwrite(ptCloud, outputPCDPath);
             
             % Display a message indicating progress
             fprintf('Processed %s and saved as %s\n', csvFiles(j).name, outputPCDPath);
