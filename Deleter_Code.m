@@ -10,7 +10,7 @@ for i = 1:length(subFolders)
     
     if ~isempty(filesToDeleteCSV)
         for j = 1:length(filesToDeleteCSV)
-            fileToDelete = fullfile(currentSubFolder, filesToDeleteCSV(j).name);
+            fileToDelete = folder, filesToDeleteCSV(j).name);
             delete(fileToDelete);
             fprintf('Deleted CSV file: %s\n', fileToDelete);
         end
