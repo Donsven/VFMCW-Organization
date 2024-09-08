@@ -16,7 +16,7 @@ for i = 1:length(subFolders)
             csvFilePath = fullfile(currentSubFolder, csvFiles(j).name);
             data = readtable(csvFilePath);
             xyzPoints = data{:, {'X', 'Y', 'Z'}};
-            intensity = data{:, 'Intensity'};
+            intensity = data{:,;
             filteredRows = intensity >= 5;
             filteredData = data(filteredRows, {'X', 'Y', 'Z'});
             [~, fileName, ~] = fileparts(csvFiles(j).name);
