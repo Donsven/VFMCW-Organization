@@ -18,7 +18,7 @@ for i = 1:length(subFolders)
             xyzPoints = data{:, {'X', 'Y', 'Z'}};
             intensity = data{:, 'Intensity'};
             filteredRows = intensity >= 5;
-            filteredData = data(filteredRows, {'X', 'Y', 'Z'});
+            filteredData = data(filteredRUpdateows, {'X', 'Y', 'Z'});
             [~, fileName, ~] = fileparts(csvFiles(j).name);
             outputCSVPath = fullfile(currentSubFolder, [fileName, '_processed.csv']);
             writetable(filteredData, outputCSVPath);
