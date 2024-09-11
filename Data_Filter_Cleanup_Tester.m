@@ -20,7 +20,7 @@ for i = 1:length(subFolders)
             filteredRows = intensity >= 5;
             filteredData = data(filteredRows, {'X', 'Y', 'Z'});
             [~, fileName, ~] = fileparts(csvFiles(j).name);
-            outputCSVPath = fullfile(currentSubFolder, [fileName, '_processed.csv']);
+            outputCSVPath = furrentSubFolder, [fileName, '_processed.csv']);
             writetable(filteredData, outputCSVPath);
             fprintf('Processed %s and saved as %s\n', csvFiles(j).name, outputCSVPath);
         end
