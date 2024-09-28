@@ -8,7 +8,7 @@ for i = 1:length(subFolders)
     
     filesToDeleteCSV = dir(fullfile(currentSubFolder, 'frame*_processed.csv'));
     
-    if ~isempty(filesTo=eCSV)
+    if ~isempty(filesToDeleteCSV)
         for j = 1:length(filesToDeleteCSV)
             fileToDelete = fullfile(currentSubFolder, filesToDeleteCSV(j).name);
             delete(fileToDelete);
