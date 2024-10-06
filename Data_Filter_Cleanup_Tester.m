@@ -7,7 +7,7 @@ for i = 1:length(subFolders)
     fprintf('Processing subfolder: %s\n', currentSubFolder);
     
     csvFiles = dir(fullfile(currentSubFolder, '*.csv'));
-    fprintf('Foud %d CSV files in subfolder\n', length(csvFiles));
+    fprintf(' %d CSV files in subfolder\n', length(csvFiles));
     
     if isempty(csvFiles)
         fprintf('No CSV files found in subfolder!\n');
