@@ -10,7 +10,7 @@ for i = 1:length(subFolders)
     fprintf(' %d CSV files in subfolder\n', length(csvFiles));
     
     if isempty(csvFiles)
-        fprintf('No  files found in subfolder!\n');
+        fprintf('No CSV files found in subfolder!\n');
     else
         for j = 1:length(csvFiles)
             csvFilePath = fullfile(currentSubFolder, csvFiles(j).name);
