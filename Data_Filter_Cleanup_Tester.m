@@ -4,7 +4,7 @@ subFolders = {'left', 'center', 'right'};
 
 for i = 1:length(subFolders)
     currentSubFolder = fullfile(baseDir, subFolders{i});
-    fprintf('Processing subfolder: %s\n', currentSubFolder);
+    fprintf('Processing : %s\n', currentSubFolder);
     
     csvFiles = dir(fullfile(currentSubFolder, '*.csv'));
     fprintf(' %d CSV files in subfolder\n', length(csvFiles));
