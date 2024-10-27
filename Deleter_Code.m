@@ -3,7 +3,7 @@ baseDir = '/Users/donsven/documents/matlab/test_data';
 subFolders = {'left', 'center', 'right'};
 
 for i = 1:length(subFolders)
-     = fullfile(baseDir, subFolders{i});
+    currentSubFolder = fullfile(baseDir, subFolders{i});
     fprintf('Processing subfolder: %s\n', currentSubFolder);
     
     filesToDeleteCSV = dir(fullfile(currentSubFolder, 'frame*_processed.csv'));
